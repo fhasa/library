@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.App-header h1 {
+  margin: 0;
+  display: inline-flex;
+  font-size: 25px;
+}
+
+.App-header .right-items {
+  display: inline-flex;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.book {
+  background-color: #e7e7e7;
+  width: 120px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.book .title {
+  background-color: #6c6c6c;
+  opacity: 0.85;
+  color: #000;
+  font-size: 13px;
+  padding: 3px;
+}
+
+.book button {
+  background-color: cornflowerblue;
+  border: none;
+  font-size: 11px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.book button:active {
+  background-color: rgb(68, 116, 204);
+}
+
+/* ////////// Modal Code //////////// */
+.backdrop {
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  padding: 20px;
+  box-shadow: 2px 2px 8px 0px #767676;
+}
+
+.modal .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+}
+
+.modal .header h3 {
+  margin: 0;
+}
+
+.modal .header button {
+  border-radius: 50%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: bisque;
+  cursor: pointer;
+}
+
+.modal .header button:active {
+  background-color: rgb(194, 176, 153);
+}
+
+.modal .actions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.modal .actions button {
+  background-color: rgb(209, 234, 243);
+  border: none;
+  box-shadow: 1px 1px 1px #a3a3a3;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.modal .actions button.submit {
+  background-color: rgb(37, 167, 214);
+}
+
+.modal .actions button:active {
+  background-color: rgb(141, 160, 167);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.content {
+  flex-direction: column;
+  margin: 10px 50px;
+  flex: auto;
+}
+
+.content div {
+  text-align: left;
+}
+
+.content input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.content label {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+}
+
+/* //////////// borrowed-books /////// */
+.borrowed-books {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.borrowed-books table td {
+  padding: 5px;
+  text-align: left;
+}
+
+.borrowed-books table th {
+  border-bottom: 1px solid #a3a3a3;
+  padding: 7px;
+}
+
+.borrowed-books table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.borrowed-books table tr {
+  background-color: #e9e9e9;
+}
